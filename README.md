@@ -1,2 +1,12 @@
 # LBCodeGetButton
-获取验证码的Button，支持自定义倒计时、自定义默认title
+```objc
+LBCodeGetButton *codeBtn = [[LBCodeGetButton alloc] initWithFrame:CGRectMake((CGRectGetWidth(self.view.frame)-80)/2, 200, 80, 40) action:^(LBCodeGetButton *sender) {
+    sender.waiting = YES;
+}];
+codeBtn.backgroundColor = [UIColor grayColor];
+[codeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+codeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+[codeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
+[codeBtn setTitle:@"还有60s" forState:UIControlStateDisabled];//这里的等待时间自定义
+```
+![]()

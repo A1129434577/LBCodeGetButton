@@ -24,7 +24,7 @@
     codeBtn.backgroundColor = [UIColor grayColor];
     [codeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     codeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    [codeBtn setTitle:@"重新获取" forState:UIControlStateNormal];
+    [codeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
     [codeBtn setTitle:@"还有60s" forState:UIControlStateDisabled];//这里的等待时间自定义
     [self.view addSubview:codeBtn];
 }
