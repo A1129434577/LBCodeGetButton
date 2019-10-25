@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "LBCodeGetButton"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "获取验证码的Button"
   spec.description  = "获取验证码的Button，支持自定义倒计时、自定义默认title。"
   spec.homepage     = "https://github.com/A1129434577/LBCodeGetButton"
