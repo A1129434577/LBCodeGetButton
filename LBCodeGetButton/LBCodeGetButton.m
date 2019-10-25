@@ -73,7 +73,4 @@
         _secondsRange = [title rangeOfString:_secondsString];
     }
 }
--(void)dealloc{
-    
-}
 @end
