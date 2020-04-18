@@ -39,7 +39,7 @@
         [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
             NSInteger seconds = [[[weakSelf currentTitle] substringWithRange:weakSelf.secondsRange] integerValue];
             seconds --;
-            [weakSelf setTitle:[[weakSelf currentTitle] stringByReplacingCharactersInRange:weakSelf.secondsRange withString:[NSString stringWithFormat:@"%0*d",(int)weakSelf.secondsString.length,(int)seconds]] forState:UIControlStateDisabled];
+            [super setTitle:[[weakSelf currentTitle] stringByReplacingCharactersInRange:weakSelf.secondsRange withString:[NSString stringWithFormat:@"%0*d",(int)weakSelf.secondsString.length,(int)seconds]] forState:UIControlStateDisabled];
             if (seconds == 0) {
                 weakSelf.waiting = NO;
                 [timer invalidate];
